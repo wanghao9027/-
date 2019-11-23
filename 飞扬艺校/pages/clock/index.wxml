@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='btns'>
+    <view bind:tap="ranking">排行榜</view>
+    <view bind:tap="clock">打卡记录</view>
+    <view bind:tap="shell">贝壳明细</view>
+  </view>
+  <view class="content" hidden="{{!showVal}}">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+         <view class="section">
+            <input name="input" placeholder="说说你的学习收获吧~" />
+          </view>
+           <button formType="submit">提交</button>
+        <!-- <input type="text" placeholder="说说你的学习收获吧~" class="inp-holder" bindinput="formName" /> -->
+    
+      <view class="con" bindtap="onEnd">
+          <image src="{{img}}" catchTap="chooseImageTap" style="width:200rpx;height:200rpx" mode="aspectFit" class="img" />
+      </view>
+      <view class="choose">
+        <view class="voice" bind:tap="voice">语音</view>
+        <view class="image" bind:tap="chooseimage">图片</view>
+        <view class="shoot" bind:tap="chooseimage">拍摄</view>
+      </view>
+    </form>
+  </view>
+  <view class="content" hidden="{{showVal}}">
+      <view class="date">
+          <view class="num">
+            <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/JNe2ianZuUgSVsDomEoj4utRq31SugFNAAkpZCdDBKg!/b/dIMAAAAAAAAA&bo=vAK8AgAAAAARFyA!&rf=viewer_4" />
+          </view>
+          <view class="dateNum">
+              <view class="">林夕</view>
+              <view class="">2019-11-03 19:00</view>
+          </view>
+          <view class="zan">1</view>
+      </view>
+      <view class="con">
+       
+        {{keyss}}
+         <image src="{{key[0]}}"  class="key-img"/>
+      </view>
+      <view class="align">
+          <view class="">0人观看</view>
+          <view class="alignNum" bind:tap="align">重新打卡</view>
+          <view class="share" bindtap="share">分享</view>
+      </view>
+    </view>
+    <view class="hideBorder" hidden="{{two}}">
+      <view class="borders" >
+        <image src="../../img/1111.jpg"></image>
+        <view>请保存图片到本地，再用微信扫一扫              </view>
+        <view class="btnsss" bindtap="cunchu">保存图片</view>
+    </view>
+    </view>
+
+
+
+
+
+  <!-- <view class="submit" bind:tap="aaa">提交</view> -->
+  
+    <!-- <button formType="reset">Reset</button> -->
+  <!-- <view class="model" hidden="{{showVal}}"> 
+    <view class="model-btn">
+         <view class="pai" bind:tap="shootPic">拍摄</view>
+         <view class="pai" bind:tap="fotoflash">从手机相册选择</view>
+         <view class="pai" bind:tap="wechat">从微信聊天文件中选择</view>
+         <view class="cancel" bind:tap="cancel">取消</view>
+    </view>
+ 
+  </view> -->
+</view>

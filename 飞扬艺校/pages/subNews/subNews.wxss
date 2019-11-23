@@ -1,0 +1,32 @@
+/* pages/subNews/subNews.wxss */
+.content{
+    padding: 20rpx;
+}
+.title{
+    font-size: 36rpx;
+    font-weight: 600;
+    margin-bottom: 20rpx;
+}
+.subTit{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.address{
+    color:rgb(86,156,214);
+    margin-right:20rpx;
+}
+.time{
+    color:#ccc;
+}
+.imgList{
+    margin: 20rpx 0;
+}
+.img{
+    width:100%;
+    margin:15rpx 0; 
+}
+.img image{
+    display: block;
+    width: 100%;
+}

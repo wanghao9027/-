@@ -1,0 +1,11 @@
+<!--pages/moment/moment.wxml-->
+<view class="content">
+    <view class="item" wx:for="{{con.all}}" wx:key="{{index}}">
+        <view class="title">
+            {{item.title}}
+        </view>
+        <view class="video">
+            <video class="" src="{{item.img}}" controls></video>
+        </view>
+    </view>
+</view>

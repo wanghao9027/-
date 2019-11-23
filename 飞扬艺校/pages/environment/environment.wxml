@@ -1,0 +1,16 @@
+<!--pages/environment/environment.wxml-->
+<view class="content">
+    <view class="title">
+        <view class="address">
+            {{con.address}}
+        </view>
+        <view class="time">
+            {{con.time}}
+        </view>
+    </view>
+    <view class="imgList">
+        <view class="img" wx:for="{{con.all}}" wx:key="{{index}}">
+            <image class="" src="{{item.img}}"/>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,92 @@
+/* pages/common/meda/meda.wxss */
+
+.meda_wrap {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.meda_one {
+	width: 100vw;
+	height: 120rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.meda_one button {
+	width: 90%;
+	height: 60rpx;
+	border-radius: 50rpx;
+}
+
+.meda_two {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.meda_two_o {
+	width: 25%;
+	height: calc(100vh - 121rpx);
+	background: rgb(247, 247, 247);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.meda_two_o text {
+	width: 100%;
+	height: 100rpx;
+	display: flex;
+	justify-content: center;
+	font-size: 30rpx;
+	align-items: center;
+	color: rgb(146, 146, 146);
+}
+
+.meda_two_t {
+	width: 75vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.meda_two_f {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.m_t_o {
+	height: 100rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30rpx;
+	color: rgb(98, 98, 98);
+}
+
+.m_t_t {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.m_t_t image {
+	width: 130rpx;
+	height: 130rpx;
+}
+
+.mt_t {
+	height: 200rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mt_t text {
+	font-size: 26rpx;
+	margin: 10rpx 0 0 0;
+}

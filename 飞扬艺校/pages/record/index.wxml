@@ -1,0 +1,36 @@
+<!--pages/record/index.wxml-->
+<view class="container">
+    <view class="record">
+        <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/JNe2ianZuUgSVsDomEoj4utRq31SugFNAAkpZCdDBKg!/b/dIMAAAAAAAAA&bo=vAK8AgAAAAARFyA!&rf=viewer_4" />
+        <view class="info">
+            <view class="name">林夕</view>
+            <view class="day">已打卡1天</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="date">
+            <view class="num">03</view>
+            <view class="dateNum">
+                <view class="">2019-11-03 19:00</view>
+                <view class="">第1天打卡</view>
+            </view>
+            <view class="zan">1</view>
+        </view>
+        <view class="con">
+            {{keyss}}
+            <image src="{{key[0]}}"  class="key-img"/>
+        </view>
+        <view class="align">
+            <view class="">0人观看</view>
+            <view class="alignNum" bind:tap="align">重新打卡</view>
+            <view class="share" bindtap="share">分享</view>
+        </view>
+    </view>
+     <view class="hideBorder" hidden="{{two}}">
+      <view class="borders" >
+        <image src="../../img/1111.jpg"></image>
+        <view>请保存图片到本地，再用微信扫一扫 </view>
+        <view class="btnsss" bindtap="cunchu">保存图片</view>
+    </view>
+    </view>
+</view>

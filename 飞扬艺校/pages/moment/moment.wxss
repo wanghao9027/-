@@ -1,0 +1,14 @@
+/* pages/moment/moment.wxss */
+.content{
+    padding: 10rpx 0;
+}
+.title{
+    padding: 20rpx;
+    font-weight:600;
+    font-size: 28rpx;
+}
+.video video{
+    display: block;
+    width: 100%;
+    /* height:640rpx; */
+}

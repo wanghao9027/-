@@ -1,0 +1,25 @@
+<!--pages/ranking/index.wxml-->
+<view class="container">
+    <view class="content">
+        <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/uBj6drSmoXqHjcrg5jWnXmyM8XTzJbpNZ8Eg7umcLc0!/b/dLYAAAAAAAAA&bo=0AIxAQAAAAADF9A!&rf=viewer_4" class="title-img"/>
+        <view class="con-list">
+          <view class="list">
+              <view class="item" wx:for="{{list}}" wx:key="index">
+                  <image src="{{item.imgUrl}}" />
+                  <image src="{{item.img}}" />
+                    <view class="name">{{item.name}}</view>
+                    <view class="zan">{{item.zan}}赞</view>
+              </view>
+          </view>
+        <view class="list">
+            <view class="item" wx:for="{{listArr}}" wx:key="index">
+                <view class="index">{{item.num}}</view>
+                <image src="{{item.img}}" />
+                <view class="name">{{item.name}}</view>
+                <view class="zan">{{item.zan}}赞</view>
+            </view>
+          </view>
+        </view>
+        
+    </view>
+</view>

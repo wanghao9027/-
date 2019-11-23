@@ -1,0 +1,100 @@
+<!--首页pages/hemo/index.wxml-->
+
+<view id="wrap">
+	<view class="nav">
+		<view class="nav_top">
+			<icon type="search" size="23" color="#b4b4b4"></icon>
+			<text>搜索姓名</text>
+		</view>
+	</view>
+	<view class="nav_center">
+		<view class="h1">{{items}} 来自搜索</view>
+		<!-- 名片 -->
+		<view class="nav_list">
+			<view class="p"> </view>
+			<view class="nav_card">
+				<view class="card_left">
+					<view class="li">
+						聊城飞扬艺术培训机构
+					</view>
+					<view class="li">
+						飞扬
+					</view>
+					<view class="li">
+						招生办公室
+					</view>
+					<view class="li">
+						15020653211
+					</view>
+					<view class="li">
+						邮箱
+					</view>
+					<view class="li">
+						No.1
+					</view>
+				</view>
+				<!-- 右侧图片 -->
+				<view class="card_right">
+					<view class="pic">
+						<image mode="scaleToFill" class="pic-img" src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/8gYSHlG.xQShxwXKpwg.qlzFVwOeK5T2O7RedUxF31c!/b/dL4AAAAAAAAA&bo=3wHgAQAAAAADBx0!&rf=viewer_4"></image>
+					</view>
+					<view class="pic" bindtap="goTab">
+						<image mode="scaleToFill" class="pic-img" src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/Lowh9KsB06i0YG8ILdlGeymUqBeNbB4wl3TZ8KrnAys!/b/dLYAAAAAAAAA&bo=QQARAAAAAAADF2I!&rf=viewer_4"></image>
+					</view>
+				</view>
+			</view>		
+		</view>
+		
+		<view class="nav_list" wx:for="{{arrData}}" wx:key="{{index}}" wx:if="{{show}}">
+			<view class="p"> </view>
+			<view class="nav_card">
+				<view class="card_left">
+					<view class="li">
+						聊城飞扬艺术培训机构
+					</view>
+					<view class="li">
+						{{item.name}}
+					</view>
+					<view class="li">
+						招生办公室
+					</view>
+					<view class="li">
+						{{item.phone}}
+					</view>
+					<view class="li">
+						邮箱
+					</view>
+					<view class="li">
+						No.{{index+2}}
+					</view>
+				</view>
+				<!-- 右侧图片 -->
+				<view class="card_right">
+					<view class="pic">
+						<image mode="scaleToFill" class="pic-img" src="{{pic?pic:'http://m.qpic.cn/psb?/V11CTl4R3lqst3/8gYSHlG.xQShxwXKpwg.qlzFVwOeK5T2O7RedUxF31c!/b/dL4AAAAAAAAA&bo=3wHgAQAAAAADBx0!&rf=viewer_4'}}"></image>
+					</view>
+					<view class="pic" bindtap="goTab">
+						<image mode="scaleToFill" class="pic-img" src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/Lowh9KsB06i0YG8ILdlGeymUqBeNbB4wl3TZ8KrnAys!/b/dLYAAAAAAAAA&bo=QQARAAAAAAADF2I!&rf=viewer_4"></image>
+					</view>
+				</view>
+			</view>		
+		</view>
+		
+		<!-- 名片结束 -->
+		<view class="nav_title">
+			技术支持TEL400-0635-993
+		</view>
+	</view>
+	<!-- 添加名片 -->
+	<view class="position" bindtap="goTo">
+		<view class="posi_pic">
+			<image mode="scaleToFill" src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/*TjPMUScwwhMUOhRzPZMU7uYbztnf.W6MrPHUfqECCg!/b/dL4AAAAAAAAA&bo=SAA1AAAAAAABF00!&rf=viewer_4"></image>
+		</view>
+		<view class="posi_text" >
+			<view class="posi_text_left">创建我的只能名片</view>
+			<view class="posi_text_left">立即申请</view>
+		</view>
+
+	</view>
+
+</view>

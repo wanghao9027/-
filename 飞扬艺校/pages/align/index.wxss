@@ -1,0 +1,58 @@
+/**index.wxss**/
+.container{
+  width: 100vw;
+  min-height:100vh;
+  background: rgb(244,244,244);
+  box-sizing: border-box;
+  padding-top: 30rpx;
+}
+.content{
+  width: 90%;
+  min-height: 400rpx;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+.choose{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+.choose>view{
+  width: 33%;
+  height: 90%;
+  text-align: center;
+  line-height: 70rpx;
+}
+.image{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.submit{
+  width: 80%;
+  height: 80rpx;
+  background: red;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  margin: 40rpx auto;
+  border-radius: 5rpx;
+  z-index: 100;
+}
+button:not([size='mini']){
+  position: absolute;
+  margin-top:100rpx;
+  left: 120rpx;
+  top: 380rpx;
+  background: red;
+  color: #fff;
+}
+
+.key-img{
+  height: 100rpx;
+  width: 100rpx;
+}

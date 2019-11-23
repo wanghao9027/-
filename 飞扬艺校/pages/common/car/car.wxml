@@ -1,0 +1,37 @@
+<view class="car_wrap">
+	<view class="details_shop_one"><text>购物车</text></view>
+	<view class="car_one">
+		<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/8gYSHlG.xQShxwXKpwg.qlzFVwOeK5T2O7RedUxF31c!/b/dL4AAAAAAAAA&bo=3wHgAQAAAAADJz0!&rf=viewer_4"></image>
+		<text class="fo">来自招生办公室的特权折扣</text>
+		<text>编辑商品</text>
+	</view>
+
+	<view class="car_two" wx:for="{{carts}}" wx:key="{{index}}">
+		<checkbox bindtap="check" checked="{{item.selected}}" data-id="{{index}}"></checkbox>
+		<image src="{{item.image}}"></image>
+		<view class="car_two_one">
+			<view class="car_two_thr">
+				<text>{{item.title}}</text>
+				<text>￥{{item.price}}</text>
+			</view>
+			<text class="car_two_five">规格：支付</text>
+			<view class="car_two_sex">
+				<text>{{item.num}}套</text>
+				<icon class="iconfont icon-ren111"></icon>
+			</view>
+		</view>
+	</view>
+	<view class="car_three">
+		<view class="car_tre">
+			<checkbox bindtap='all' checked="{{select_all}}"></checkbox>
+			<text class="all_car">全选</text>
+		</view>
+		<view class="car_t_al">
+			<view class="car_t_aq">
+				<text class="aly">总计: <text class="omf">￥{{totalPrice}}</text></text>
+				<text class="yun">不含运费</text>
+			</view>
+			<text class="car_t_ar">去结算</text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,91 @@
+/* pages/common/buy/buy.wxss */
+.buy_wrap {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.buy_one {
+	width: 95vw;
+	height: 150rpx;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buy_t {
+	width: 100vw;
+	height: 200rpx;
+	display: flex;
+	background: rgb(248, 248, 248);
+}
+
+.buy_two {
+	width: 95vw;
+	height: 200rpx;
+	margin: 0 auto;
+	display: flex;
+}
+
+.buy_two image {
+	width: 25%;
+	height: 200rpx;
+}
+
+.buy_right {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	/* height: 20rpx; */
+	margin: 0 0 0 5%;
+}
+
+.buy_three {
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+}
+
+.buy_three text {
+	font-size: 35rpx;
+	color: #333;
+}
+
+.buy_g {
+	font-size: 30rpx;
+	color: rgb(179, 179, 179);
+	margin: 10rpx 0 0 0;
+}
+
+.buy_o {
+	width: 95vw;
+	height: 120rpx;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.buy_t_o {
+	font-size: 35rpx;
+}
+
+.buy_t_q {
+	font-size: 35rpx;
+	color: red;
+}
+
+.buy_p {
+	width: 100vw;
+	height: 120rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: red;
+	color: #fff;
+}

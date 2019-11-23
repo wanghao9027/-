@@ -1,0 +1,31 @@
+/* pages/shell/index.wxss */
+.container{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20rpx;
+    background: #f2f2f2;
+}
+.record{
+    width: 100%;
+    height: 140rpx;
+    border-radius: 5rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+.record .info{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.record .day{
+    color: #ccc;
+}
+.record .num{
+    color: greenyellow;
+}

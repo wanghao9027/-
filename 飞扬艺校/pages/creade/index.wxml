@@ -1,0 +1,123 @@
+<!--pages/creade/index.wxml-->
+<!-- <text>添加名片</text> -->
+<view id="wrap">
+    <!-- 选项卡 -->
+    <view class="top">
+        <view class="swiper">
+                <view class="pic-1"  wx:if="{{num==0}}">
+                    <image class="img" src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/E0.5wrrMk781ZhTnZAQ0uhU65cSflZSKhl8vBjkbNfs!/b/dL4AAAAAAAAA&bo=kwKPAwAAAAABFy0!&rf=viewer_4"></image>
+                </view>
+               
+                <view class="pic-3" wx:elif="{{num==1}}">
+                    <image class="img" src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/*rNafXXKjZQbTCbr2OdwZDi8okDfQg3.wTESQEd15eQ!/b/dL8AAAAAAAAA&bo=7gIfBAAAAAABF8c!&rf=viewer_4"></image> 
+                </view>
+				<view class="pic-2" wx:else>
+				    <image class="img"  src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/vMud2Ea1lG1Fyct8i2mbviGX8LDFeOsl4cYaNcbQKUs!/b/dFABAAAAAAAA&bo=pQKDAQAAAAABFxU!&rf=viewer_4"></image>
+				</view>
+        </view>
+        <view class="top-nav">
+            <view class="h1">名片样式</view>
+            <view class="tabs">
+                <image class="{{num==index?'red':''}}" catchtap="optio" data-index="{{index}}" wx:for="{{pic}}" wx:key="{{index}}" src="{{item}}"></image>
+                
+            </view>
+        </view>
+    </view>
+   <!-- 名片内容 -->
+   <view class="content">
+       <view class="list">
+           <view class="head one">
+                <text>头像</text>
+                <view class="list-pic" bindtap="getUser">
+                    <!-- <image src="{{nuseName?nuseName:'http://m.qpic.cn/psb?/V11CTl4R3lqst3/VBwASI8y276JstSdClzG33sOdGRzRn4*IOZS04zEmRM!/b/dL4AAAAAAAAA&bo=cgByAAAAAAADByI!&rf=viewer_4'}}"></image> -->
+                    <open-data type="userAvatarUrl"></open-data>
+                </view>
+           </view>
+           <view class="head">
+                <text>姓名</text>
+               <input maxlength="4" placeholder="姓名" value="{{name}}" bindblur="nameBlur"/>
+           </view>
+           <view class="head">
+                <text>职称</text>
+                <text>飞扬代言人</text>
+           </view>
+       </view>
+       <view class="list">
+            <view class="head">
+                <text>手机号</text>
+                <input type="number" maxlength="11" placeholder="手机号" value="{{phone}}" bindblur="phoneBlur"/>
+            </view>
+            <view class="head">
+                <text>微信号</text>
+                <input placeholder="微信号" value="{{WX}}" bindblur="WXBlur"/>
+            </view>
+            <view class="head">
+                <text>企业微信</text>
+                <input placeholder="企业微信" value="{{company}}" bindblur="WXBlur"/>
+            </view>
+            <view class="head">
+                <text>座机号</text>
+                <input type="number" maxlength="11" placeholder="座机号" value="{{studio}}" bindblur="phoneBlur"/>
+            </view>
+            <view class="head">
+                <text>邮箱</text>
+                <input placeholder="邮箱" value="{{mail}}" bindblur="mailBlur"/>
+            </view>
+            <view class="head">
+                <text>公司</text>
+                <text>聊城飞扬艺术培训机构</text>
+            </view>
+            <view class="head one">
+                    <text>VR全景</text>
+                    <text>VR全景链接</text>
+                </view>
+                <view class="head one">
+                    <text>VR封面</text>
+                    <text><image src=""></image></text>
+                </view>
+       </view>
+   </view>
+   <view class="content">
+        <view class="list border">
+            <view class="h1">个性签名</view>
+            <view class="text">
+                个性签名
+            </view>
+            <view class="text text-t" catchtap="onEnd">
+                <view class="flex">
+                    <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/qf9btmounP*8kzKnK53TvpqaDaLwtXAnkxnUaeVJ.wk!/b/dL8AAAAAAAAA&bo=WQBXAAAAAAABFz4!&rf=viewer_4"></image>
+                    <text>暂未录音</text>
+                </view>
+               
+                <button catchtap='onStart'>开始录音 按住说话</button>
+            </view>
+        </view>
+   </view>
+  
+   <!-- <view class="content">
+        <view class="list pic-img">
+            <view class="h1">图片展示</view>
+            <view class="text-cent">
+                +
+            </view>
+        </view>
+   </view> -->
+
+   
+    <view class="content">
+        <view class="list">
+            <view class="h1">免审口令</view>
+            <view class="text-pic">
+                <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/LgOsXq0UZbx*bao4HoJ8YhJmlgWET8.Egf5RCuulJ7U!/b/dL8AAAAAAAAA&bo=KAAYAAAAAAADFwI!&rf=viewer_4"></image>
+                <text>请输入口令</text>
+            </view>
+        </view>
+    </view>
+    
+    
+   <!-- 保存 -->
+   <view class="bottom">
+       <button bindtap="goBack">保存 </button>
+    
+   </view>
+</view>

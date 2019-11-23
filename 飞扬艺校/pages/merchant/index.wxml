@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<import src="/pages/common/icon/icon" />
+<import src="/pages/common/consu/consu" />
+<view class="shop_wrap">
+
+	<view class="shop_one">
+		<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/udqv*QPOnU1hcuyi8S2Or2LaGqIMqVoty5ILBuioiHw!/b/dL4AAAAAAAAA&bo=BgIGAgAAAAADNxI!&rf=viewer_4"></image>
+	</view>
+
+
+	<view class="shop-two">
+		<view class="shop_t_o">
+			<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/996wN8TlzwC4l45BjljJOiT3whg5WQNzNNjxN4DTEzM!/b/dL8AAAAAAAAA&bo=TABMAAAAAAADFzI!&rf=viewer_4"></image>
+		</view>
+		<view class="shop_t_t">
+			<text>飞扬艺校</text>
+			<text>认证企业</text>
+		</view>
+	</view>
+
+</view>
+<view class="shop_qq"></view>
+<view class="shop_un">
+
+	<view class="shop_in">
+		<text wx:for="{{['套餐','一对多套餐','一对一套餐']}}" wx:key="{{index}}" bindtap="onmouTap" data-index="{{index}}" class="tabs-item {{currentIndex==index?'selected':''}}">{{item}}</text>
+	</view>
+	<text bindtap="meda">三</text>
+</view>
+<view class="shop_en">
+
+	<view class="shop_yn" bindtap="details" wx:for="{{list}}" wx:key="{{index}}" data-id="{{item.id}}" >
+		<image src="{{item.image}}"></image>
+		<text>{{item.title}}</text>
+		<text class="shop_text_o">￥{{item.price}}/套</text>
+	</view>
+
+</view>
+<text class="in_text">技术支持TEL400-0635-993</text>
+
+

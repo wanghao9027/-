@@ -1,0 +1,23 @@
+/* pages/common/icon/icon.wxss */
+@import '/assets/font/iconfont.wxss';
+
+.i_icon {
+  width: 280rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 40rpx;
+  right: 20rpx;
+}
+
+icon {
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: rgb(173,175,174);
+  border-radius: 50%;
+  font-size: 80rpx;
+  color: #fff;
+}

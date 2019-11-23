@@ -1,0 +1,10 @@
+<!--pages/shell/index.wxml-->
+<view class="container">
+    <view class="record">
+        <view class="info">
+            <view class="name">asdfasds</view>
+            <view class="day">打卡</view>
+        </view>
+        <view class="num">+0</view>
+    </view>
+</view>

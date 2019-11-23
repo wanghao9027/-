@@ -1,0 +1,14 @@
+/* pages/common/consu/consu.wxss */
+.consu_img{
+	width: 100rpx;
+	height: 100rpx;
+	position: fixed;
+	bottom: 10%;
+	right: 10%;
+	border-radius: 50%;
+}
+.shop_in{
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+}

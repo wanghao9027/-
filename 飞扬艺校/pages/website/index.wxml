@@ -1,0 +1,89 @@
+<!--index.wxml-->
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="true" interval="5000" duration="500" indicator-dots="true">
+        <block wx:for="{{swipeImg}}" wx:key="index">
+          <swiper-item>
+            <view class="swiper-item">
+              <image class="" src="{{item.url}}"/>
+            </view>
+          </swiper-item>
+        </block>
+  </swiper>
+  <view class="item">
+      <view class="tit">
+          <view>飞扬简介</view>
+          <view bindtap="goBrief">查看更多 ></view>
+      </view>
+      <view wx:for="{{brief.part}}" wx:key="index">
+          {{item.txt}}
+      </view>
+  </view>
+  <view class="item">
+      <view class="tit">
+          <view>飞扬资讯</view>
+          <view bindtap="goNews">查看更多 ></view>
+      </view>
+      <view>
+          <view class="newsItem" bindtap="goSubNews" wx:for="{{information.part}}" wx:key="{{index}}" data-id="{{index}}">
+            <view class="img">
+              <image class="" src="{{item.img}}"/>
+            </view>
+            <view class="right">
+              <view class="text">
+                {{item.title}}
+              </view> 
+              <view class="time">
+                {{item.time}}
+              </view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view class="item">
+    <view class="tit">
+        <view>精彩瞬间</view>
+        <view bindtap="goMoment">查看更多 ></view>
+    </view>
+    <view class="moment">
+        <view class="subMo" wx:for="{{marvellous.part}}" wx:key="{{index}}">
+            <view class="title">
+                {{item.title}}
+            </view>
+            <view class="video">
+                <video class="" src="{{item.img}}"></video>
+            </view>
+        </view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="tit">
+        <view>培训环境</view>
+        <view bindtap="goEnvironment">查看更多 ></view>
+    </view>
+    <view class="environment" wx:for="{{environment.part}}" wx:key="{{index}}">
+      <image class="" src="{{item.img}}"/>
+    </view>
+  </view>
+  <view class="contact">
+    <view class="way">
+        联系方式
+    </view>
+    <view class="phone" bindtap="call">
+        <view class="leftBox">
+            <view class="office">
+                校长办公室
+            </view>
+            <view class="num">
+              {{phone}}
+            </view>
+        </view>
+        <view class="rightBox">
+          >
+        </view>
+    </view>
+    <view class="ads" bindtap="map">
+        当代国际中三号楼
+    </view>
+  </view>
+</view>

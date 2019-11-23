@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="list">
+        <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+            <view class="img">
+                <image class="" src="{{item.user}}"/>
+            </view>
+            <view class="right">
+              <view class="title">
+                  <view>{{item.title}}</view>
+                  <view>
+                    {{item.type}}
+                  </view>
+                  <button open-type="share">
+                      分享
+                  </button>
+              </view>
+              <view class="con"  bindtap="goDetail" data-id="{{index}}">
+                  <view class="tip">
+                      {{item.content}}
+                  </view>
+                  <view class="bigPic">
+                      <video wx:if="{{index==0}}" src="{{video}}"></video>
+                      <image wx:if="{{index!==0}}" class="" src="{{item.img}}"/>
+                  </view>
+              </view>
+              <view class="detail">
+                  <view>
+                      查看详情
+                  </view>
+                  
+              </view>
+              <view class="timeBox">
+                  <view class="time">{{item.time}}</view>
+                  <image src="../../img/1_11.png" alt=""/>
+              </view>
+            </view>
+        </view>
+    </view>
+</view>

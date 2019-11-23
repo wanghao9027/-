@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<view class="content">
+    <view class="title">
+        {{con.tip}}
+    </view>
+    <view class="subTit">
+        <view class="ads">{{con.address}}</view>
+        <view class="time">
+            {{con.times}}
+        </view>
+    </view>
+    <view class="con">
+        {{con.txt1}}
+    </view>
+    <view class="picList">
+        <view class="pic" wx:for="{{con.imgList}}" wx:key="index">
+            <image class="" src="{{item.url}}"/>
+        </view>
+    </view>
+    <view class="con">
+       {{con.txt2}} 
+    </view>
+</view>

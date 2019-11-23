@@ -1,0 +1,131 @@
+<!--index.wxml-->
+<view id="container">
+  <view class="top">
+    <view class="pic">
+      <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/83cZB8SN5tcPNbMCzACuODhikojuawiKapaXRlN9M3Y!/b/dFQBAAAAAAAA&bo=mQKCAwAAAAADJxg!&rf=viewer_4"></image>
+      <!-- 定位 -->
+      <view class="field" bindtap="goHemo">
+          <image src="../../img/tag/00.png"></image>
+      </view>   
+
+    </view>
+    <!-- 收起没名片 -->
+    <view class="title">
+      <view class="titlte-h1" bindtap="hide">
+        {{state?"收起以下名片信息":"展开全部名片信息 "}} 
+        
+      </view>
+      <view class="title-news"  wx:if="{{state}}">
+        <view class="title-text">
+          <view class="text">
+             <text>手机</text>
+             <text>15020653211</text>
+          </view>
+         <view class="button" bindtap="dial">
+           拨打
+         </view>
+        </view>
+
+        <view class="title-text">
+          <view class="text">
+              <text>座机</text>
+              <text>15020653211</text>
+          </view>
+          <view class="button"  bindtap="dial">
+            拨打
+          </view>
+        </view>
+
+        <view class="title-text">
+          <view class="text">
+              <text>公司</text>
+              <text>聊城飞扬艺术培训机构</text>
+          </view>
+          <view class="button">
+            复制
+          </view>
+        </view>
+
+        <view class="title-text">
+          <view class="text">
+              <text>地址</text>
+              <text>聊城当代国际核心三号楼</text>
+          </view>
+          <view class="button">
+            导航
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <!-- 收起没名片结束 -->
+    <!-- 浏览记录 -->
+    <view class="record">
+      <view class="p">
+        <button class="p-text" open-type="share">分享名片</button>
+        <button class="p-text" bindtap="phoneNumTap">交换手机号</button>
+      </view>
+      <!-- 收藏 -->
+      <view class="collect"> 
+        <view class="record-nam">
+          <view class="record-pic" wx:for="{{8}}" wx:key="{{index}}">
+            <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/JNe2ianZuUgSVsDomEoj4utRq31SugFNAAkpZCdDBKg!/b/dIMAAAAAAAAA&bo=vAK8AgAAAAARFyA!&rf=viewer_4"></image>
+          </view>
+        </view>
+        <view class="collect-pic" bindtap="switcher">
+          <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/Dmn.UXJmPn8epWWAbPTVwA97ouP5KNwdD.GF1iHMjQM!/b/dFMBAAAAAAAA&bo=yADIAAAAAAADFzI!&rf=viewer_4"></image>
+          <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/KJUjyzFi1WSjSyrJLhPQtxOhE4K4OeE0UArPIjSMDKQ!/b/dLYAAAAAAAAA&bo=yADIAAAAAAADFzI!&rf=viewer_4" wx:if="{{red}}"></image>
+          <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/EqjYQnPhwTmMJCxo.9vJ0zTmblsBuOC8rO2QDIqbv0U!/b/dLYAAAAAAAAA&bo=yADIAAAAAAADFzI!&rf=viewer_4" wx:else></image>
+        </view>
+      </view>
+      <!-- 浏览？ -->
+      <view class="record-text">
+        <view class="text">
+          最近7428人浏览
+        </view>
+        <view class="text">
+          靠谱：3756
+        </view>
+      </view>
+    </view>
+    <!-- 浏览记录结束 -->
+  </view>
+
+  <view class="h1">
+    <!-- 个性签名 -->
+    <view class="h1-title">
+      <view class="title-h1">
+          个性签名
+      </view>
+      <view class="title-text-text">
+        飞青春梦想扬艺术风帆
+      </view>
+    </view>
+     <!-- 我的视频 -->
+    <view class="h1-title">
+      <view class="title-h1">
+          我的视频
+      </view>
+      <view class="title-text">
+		  <video src="../../img/1.mp4" poster="http://m.qpic.cn/psb?/V11CTl4R3lqst3/e96XZg*hcop91pQx5wkqx7iHBfg3xZYUe093LAVJHDg!/b/dLgAAAAAAAAA&bo=BgIGAgAAAAADFzI!&rf=viewer_4" binderror="videoErrorCallback"></video>
+        <!-- <image src="../../img/1_07.png"></image> -->
+      </view>
+    </view>
+    <!-- 图片展示？ -->
+    <view class="h1-title">
+      <view class="title-h1">
+          图片展示
+      </view>
+      <view class="title-text-pic">
+        <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/udqv*QPOnU1hcuyi8S2Or2LaGqIMqVoty5ILBuioiHw!/b/dL4AAAAAAAAA&bo=BgIGAgAAAAADNxI!&rf=viewer_4"></image>
+        <image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/g22rO*y8m.j5HRH4SKyEKIFm1dKjF3wsOi6JS7S2Wm8!/b/dL4AAAAAAAAA&bo=3ACYAAAAAAADF3Y!&rf=viewer_4"></image>
+		<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/yYGHABHDuKRk17RSiokPio4Df0j5eBx8.vcjWvjT*lk!/b/dEwBAAAAAAAA&bo=mAK4AQAAAAADNzE!&rf=viewer_4"></image>
+		<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/0tS2jiXbaQ2JLS5BujUw6N9*tGEkJnjmGCPSOUuLJ84!/b/dL8AAAAAAAAA&bo=mAK6AQAAAAADNzM!&rf=viewer_4"></image>
+      </view>
+    </view>
+
+  </view>
+  <view class="name-h1">
+      技术支持TEL400-0635-993
+  </view>
+</view>

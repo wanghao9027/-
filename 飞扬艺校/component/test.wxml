@@ -1,0 +1,3 @@
+<!--component/test.wxml-->
+<text>component/test.wxml</text>
+<view bindtap="send" data-id="aa">{{v}}</view>

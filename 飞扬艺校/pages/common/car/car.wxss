@@ -1,0 +1,143 @@
+/* pages/common/car/car.wxss */
+
+.car_wrap {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.details_shop_one {
+	display: flex;
+	width: 100vw;
+	height: 60rpx;
+	align-items: center;
+}
+
+.car_one {
+	width: 95vw;
+	margin: 30rpx auto;
+	height: 30rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fo {
+	font-size: 30rpx;
+	color: rgb(158, 158, 158);
+}
+
+.car_one image {
+	width: 40rpx;
+	height: 40rpx;
+}
+
+.car_one text:nth-child(3) {
+	color: red;
+	font-size: 24rpx;
+}
+
+.car_two {
+	width: 95vw;
+	height: 200rpx;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.car_two image {
+	width: 120rpx;
+	height: 120rpx;
+}
+
+.car_two_thr {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.car_two_thr text {
+	color: #333;
+	font-size: 30rpx;
+}
+
+.car_two_one {
+	width: 65%;
+	margin: 0 0 0 5%;
+}
+
+.car_two_five {
+	font-size: 25rpx;
+	color: rgb(158, 158, 158);
+}
+
+.car_two_sex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.car_two_sex icon {
+	font-size: 16rpx;
+}
+
+.car_two_sex text {
+	font-size: 25rpx;
+	color: rgb(158, 158, 158);
+}
+
+.car_three {
+	width: 100vw;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #eee;
+}
+
+.car_t_al {
+	display: flex;
+}
+
+.car_t_aq {
+	height: 100rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.car_t_ar {
+	width: 240rpx;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(255, 1, 24);
+	color: #fff;
+	font-size: 35rpx;
+}
+
+.yun {
+	font-size: 20rpx;
+	color: rgb(195, 195, 195);
+	margin:5rpx 10rpx 0 0;
+}
+
+.aly {
+	color: #333;
+	font-size: 30rpx;
+	margin:20rpx 10rpx 0 0;
+}
+
+.omf {
+	color: red;
+}
+.all_car{
+	font-size: 25rpx;
+}
+.car_three .car_tre{
+	padding: 20rpx;
+}
+

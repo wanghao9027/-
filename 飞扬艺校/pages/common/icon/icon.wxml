@@ -1,0 +1,9 @@
+<template name="i_icon">
+
+  <view class="i_icon">
+    <icon class="iconfont icon-gouwuche2" bindtap="onclick"></icon>
+    <icon class="iconfont icon-ren111"></icon>
+    <icon class="iconfont icon-fenxiang"></icon>
+  </view>
+
+</template>

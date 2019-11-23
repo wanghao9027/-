@@ -1,0 +1,25 @@
+<!--pages/subNews/subNews.wxml-->
+<view class="content">
+    <view class="title">
+        {{con.title}}
+    </view>
+    <view class="subTit">
+        <view class="address">
+            {{con.address}}
+        </view>
+        <view class="time">
+            {{con.time}}
+        </view>
+    </view>
+    <view class="txt">
+        {{con.txt1}}
+    </view>
+    <view class="imgList">
+        <view class="img" wx:for="{{con.imgList}}" wx:key="{{index}}">
+            <image  src="{{item.url}}"/>
+        </view>
+    </view>
+    <view class="txt">
+        {{con.txt2}}
+    </view>
+</view>

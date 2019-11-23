@@ -1,0 +1,57 @@
+<!--pages/common/meda/meda.wxml-->
+<view class="meda_wrap">
+	<view class="meda_one">
+		<button type="text">搜索</button>
+	</view>
+	<view class="meda_two">
+		<view class="meda_two_o">
+			<text>一对一套餐</text>
+			<text>一对多套餐</text>
+		</view>
+		<view class="meda_two_t">
+
+			<view class="meda_two_f">
+				<view>
+					<view class="m_t_o">
+						<text>一对多套餐</text>
+						<text>查看全部></text>
+					</view>
+					<view class="m_t_t">
+						<view class="mt_t">
+							<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/rOu7oCbJD*P5z2IpFyHSKZ296aNEILk7HqjI6udfsvs!/b/dMMAAAAAAAAA&bo=PgEmAQAAAAADFyo!&rf=viewer_4"></image>
+							<text>一对多(套...</text>
+						</view>
+						<view class="mt_t">
+							<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/zQyO8bMQPjv2nW*TcSRjqL9DKRacIGzAGyjbG9WN4zw!/b/dLgAAAAAAAAA&bo=PgEmAQAAAAADJxo!&rf=viewer_4"></image>
+							<text>一对多(套...</text>
+						</view>
+						<view class="mt_t">
+							<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/Q0yg2Wk.7ZbeA7ez9oap*Ibq5LurDviP56bXQ4yie9o!/b/dFMBAAAAAAAA&bo=PgEmAQAAAAADJxo!&rf=viewer_4"></image>
+							<text>一对多(套...</text>
+						</view>
+					</view>
+				</view>
+				<view>
+					<view class="m_t_o">
+						<text>一对一套餐</text>
+						<text>查看全部></text>
+					</view>
+					<view class="m_t_t">
+						<view class="mt_t">
+							<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/dVcRcCSQy.bfggQmJzCOI5rSW.6qv9SXjRfatpHc1Ck!/b/dFMBAAAAAAAA&bo=PgEmAQAAAAADFyo!&rf=viewer_4"></image>
+							<text>一对多(套...</text>
+						</view>
+						<view class="mt_t">
+							<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/dVcRcCSQy.bfggQmJzCOI5rSW.6qv9SXjRfatpHc1Ck!/b/dFMBAAAAAAAA&bo=PgEmAQAAAAADFyo!&rf=viewer_4"></image>
+							<text>一对多(套...</text>
+						</view>
+						<view class="mt_t">
+							<image src="http://m.qpic.cn/psb?/V11CTl4R3lqst3/veXdfyHgZKCMmeizyPAR1IpaEEJ3C1Q*mPY9r3T.rgY!/b/dDQBAAAAAAAA&bo=PgEmAQAAAAADFyo!&rf=viewer_4"></image>
+							<text>一对多(套...</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

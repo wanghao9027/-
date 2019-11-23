@@ -1,0 +1,174 @@
+/* 首页pages/hemo/index.wxss */
+#wrap{
+    width:100vw;
+    height:100vh;
+    background-color:#f0f0f5;
+}
+.nav{
+    box-sizing: border-box;
+    padding:20rpx 24rpx;
+    width:100%;
+    height:102rpx;
+    background-color: #fff;
+}
+.nav_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:62rpx;
+    background-color: #f0f0f5;
+}
+.nav_top text{
+    color: #b4b4b4;
+}
+/* 名片 */
+.nav_center{
+    box-sizing:border-box;
+    padding:0 34rpx;
+    width:100%;
+    height: 90vh;
+}
+.nav_center .h1{
+    width:100%;
+    height:92rpx;
+    text-align: left;
+    line-height:92rpx;
+    color:#b4b4b4;
+}
+.nav_list{
+    box-sizing:border-box;
+    display:flex;
+    align-items: center;
+    width:100%;
+    height:402rpx;
+	  margin-top:10rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    /* border-bottom-right-radius: 20rpx 20rpx; */
+}
+.nav_list .p{
+    width:10rpx;
+    height:100%;
+    background-color:#3cb3f5;
+    border-top-left-radius: 20rpx 20rpx;
+    border-bottom-left-radius: 20rpx 20rpx;
+}
+.nav_card{
+    display: flex;
+   width:672rpx;
+   height:100%;
+}
+.card_left{
+    box-sizing: border-box;
+    padding-left:45rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width:60%;
+    height:100%;
+}
+.card_left .li:nth-child(1){
+    color:#cbccd0;
+}
+.card_left .li:nth-child(2){
+    font-size:40rpx;
+    color:#616161;
+}
+.card_left .li:nth-child(3){
+    font-size:22rpx;
+    color:#616161;
+}
+.card_left .li:nth-child(4){
+    font-size:22rpx;
+    color:#cbccd0;
+}
+.card_left .li:nth-child(5){
+    font-size:22rpx;
+    color:#cbccd0;
+}
+.card_left .li:nth-child(6){
+    font-size:22rpx;
+    color:#3cb3f5;
+}
+.card_right{
+    box-sizing: border-box;
+    padding-right:45rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:40%;
+    height:100%;
+}
+.card_right .pic:nth-child(2){
+    width:73rpx;
+    height:25rpx;
+}
+.card_right .pic{
+    width:116rpx;
+    height:116rpx;
+}
+.card_right .pic .pic-img{
+    width:100%;
+    height:100%;
+}
+.nav_title{
+    width:100%;
+    height:100rpx;
+    text-align: center;
+    line-height:100rpx;
+}
+
+.position{
+    /* display:flex;
+    justify-content:space-between;
+    align-items:center; */
+    position:fixed;
+    bottom:100rpx;
+    right:5%;
+    /* width:90%; */
+    height:100rpx;
+    background-color: #3cb3f5;
+    border-radius: 50rpx;
+}
+.position .posi_pic{
+    width:100rpx;
+    height:100rpx;
+    background-color:#3cb3f5;
+    border-radius:100rpx;
+    line-height:118rpx;
+    text-align: center;
+	float:left;
+
+}
+.position .posi_pic image{
+    width:70rpx;
+    height:50rpx;
+}
+.position .posi_text{
+    box-sizing:border-box;
+    padding: 0 25rpx;
+  	width:290px;
+    height:100rpx;
+	  float:left;
+    color:#fff;
+    overflow:hidden;
+	  animation:lanimation 1s ease-in;
+}
+
+@keyframes lanimation{
+  from {width:0px;}
+  to {width:290px;}
+}
+
+
+.position .posi_text .posi_text_left{
+    float:left;
+    width:50%;
+    height:100rpx;
+    line-height:100rpx;
+}
+.position .posi_text .posi_text_left:nth-child(2){
+    text-align: right;
+}

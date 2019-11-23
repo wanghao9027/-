@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<!-- 遮罩层 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<!-- 弹出层 -->
+<view class="modalDlg" wx:if="{{showModal}}">
+    <view bindtap="ok" class="ok">X</view>
+</view>
+<view bindtap="btn" class="btn">弹窗</view>

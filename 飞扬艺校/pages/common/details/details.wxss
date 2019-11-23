@@ -1,0 +1,237 @@
+/* pages/common/details/details.wxss */
+@import "/pages/common/icon/icon.wxss";
+
+.deta_wrap {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.deta_one {
+	display: flex;
+	height: 100rpx;
+	align-items: center;
+	text-indent: 20rpx;
+	font-size: 30rpx;
+}
+
+.img_one {
+	width: 100%;
+	height: 400rpx;
+}
+
+.deta_two {
+	width: 95%;
+	height: 60rpx;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.d_text_one {
+	font-size: 30rpx;
+	color: red;
+}
+
+.d_text_two {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.d_text_two text {
+	font-size: 25rpx;
+	color: #ccc;
+}
+
+.deta_three {
+	display: flex;
+	flex-direction: column;
+	width: 95vw;
+	margin: 0 auto;
+}
+
+.d_text_three {
+	width: 100%;
+	height: 80rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30rpx;
+}
+
+.img_two {
+	width: 100%;
+	height: 400rpx;
+}
+
+.deta_fix {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.text_four {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-size: 25rpx;
+	color: #ccc;
+	margin: 40rpx 0 0 0;
+}
+
+.deta_f_one {
+	width: 15%;
+	height: 100rpx;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.deta_f_one image {
+	width: 60rpx;
+	height: 50rpx;
+	margin: 10rpx 0 0 30rpx;
+}
+
+.deta_f_one text {
+	font-size: 30rpx;
+	margin: 10rpx 0 0 0;
+}
+
+.join {
+	width: 35%;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(255, 179, 1);
+	color: #fff;
+	font-size: 30rpx;
+}
+
+.buy {
+	width: 35%;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(224, 46, 36);
+	color: #fff;
+	font-size: 30rpx;
+}
+
+
+
+/* 遮罩层 */
+.mask {
+	width: 100vw;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	z-index: 9000;
+	opacity: 0.5;
+}
+
+/* 弹出层 */
+.modalDlg {
+	width:100vw;
+	height: 600rpx;
+	position: fixed;
+	bottom:0;
+	left:0;
+	z-index: 9999;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* 弹出层里面的按钮 */
+.ok {
+	width:50rpx;
+	height:50rpx;
+	border:1px solid #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modeL_wrap{
+	height: 100rpx;
+	display: flex;
+	justify-content: space-between;
+	margin:20rpx 0 0 0;
+}
+.modeL_wrap image{
+	width: 100rpx;
+	height: 100rpx;
+	position: absolute;
+	top:-5%;
+	left:40rpx;
+}
+.model_one{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	font-size: 30rpx;
+	margin:0 0 0 30%;
+}
+.model_q button{
+	width: 30rpx;
+	height: 30rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.model_q{
+	display: flex;
+	align-items: center;
+}
+.model_tr{
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+}
+.model_we{
+	display: flex;
+	width: 95vw;
+	margin: 0 auto;
+
+	flex-direction: column;
+}
+.komm{
+	display: flex;
+	width: 100%;
+	height: 70rpx;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	background: red;
+	color: #fff;
+}
+.zhif{
+	width: 70rpx;
+	height:30rpx;
+	display: flex;
+	padding: 10rpx;
+	color: #fff;
+	background: red;
+	justify-content: center;
+	align-items: center;
+	font-size: 20rpx;
+	margin:10rpx 0 0 0;
+}
+.model_rig{
+	margin:20rpx 0 0 0;
+	text-align: right;
+}

@@ -1,0 +1,19 @@
+/* pages/brief/brief.wxss */
+.content{
+    padding: 20rpx;
+}
+.tip{
+    display: flex;
+    align-items: center;
+    margin-bottom:20rpx;
+}
+.address{
+    color:rgb(36,136,214);
+    margin-right: 20rpx;
+}
+.time{
+    color:#ccc;
+}
+.text>view{
+    text-indent: 2rem;
+}

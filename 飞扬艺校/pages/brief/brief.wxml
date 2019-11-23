@@ -1,0 +1,12 @@
+<!--pages/brief/brief.wxml-->
+<view class="content">
+    <view class="tip">
+        <view class="address">{{con.address}}</view>
+        <view class="time">{{con.time}}</view> 
+    </view>
+    <view class="text">
+        <view wx:for="{{con.all}}" wx:key="{{index}}">
+            {{item.txt}}
+        </view>
+    </view>
+</view>

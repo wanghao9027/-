@@ -1,0 +1,102 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list{
+  padding:20rpx;
+}
+.item{
+  padding: 20rpx 0;
+  display: flex;
+  border-bottom :1rpx solid #ccc;
+}
+.item:nth-last-child(1){
+  border:0;
+}
+.item .right{
+  flex: 1;
+}
+.item .right .title{
+  height:50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom:8rpx;
+}
+.title button{
+  margin: 0;
+  padding: 0;
+  width: 60rpx;
+  min-height: 24rpx;
+  line-height:45rpx;
+  font-size:24rpx;
+  background: #fff;
+}
+button::after {
+  border: none;
+}
+button {
+  background-color: transparent; 
+  padding-left: 0;
+  padding-right: 0; 
+  line-height:inherit;
+}
+button {
+  border-radius:0;
+}
+.title view:nth-child(2){
+  text-align: center;
+  padding: 2rpx 20rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  border:1rpx solid #ccc;
+  font-size: 28rpx;
+  color:#ccc;
+}
+.title view:nth-child(1),.title view:nth-child(3){
+  color:#3b4b6a;
+}
+.item .img{
+  width:100rpx;
+  height:100rpx;
+  margin-right:30rpx;
+}
+.item .img image{
+  width:100%;
+  height:100%;
+}
+.con{
+  box-sizing: border-box;
+  padding: 20rpx;
+  width: 100%;
+  height:630rpx;
+  background: #f3f3f5;
+  
+}
+.con .tip{
+  margin-bottom:10rpx;
+  font-size: 28rpx;
+}
+.con .bigPic image{
+  display: block;
+  width:540rpx;
+  height:540rpx;
+  border-radius:5rpx;
+}
+.con .bigPic video{
+  width: 100%;
+}
+.detail{
+  color:#3b4b6a;
+}
+.timeBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeBox image{
+  width: 40rpx;
+  height:35rpx;
+}

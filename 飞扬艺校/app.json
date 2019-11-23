@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/hemo/index",
+    "pages/card/index",
+    "pages/merchant/index",
+    "pages/clock/index",
+    "pages/dynamic/index",
+    "pages/website/index",
+    "pages/creade/index",
+    "pages/align/index",
+    "pages/alignT/index",
+    "pages/ranking/index",
+    "pages/record/index",
+    "pages/shell/index",
+    "pages/brief/brief",
+    "pages/detail/detail",
+    "pages/environment/environment",
+    "pages/map/map",
+    "pages/moment/moment",
+    "pages/news/news",
+    "pages/subNews/subNews",
+    "pages/common/car/car",
+    "pages/common/consu/consu",
+    "pages/common/details/details",
+    "pages/common/buy/buy",
+    "pages/common/meda/meda",
+    "pages/common/fixed/fixed"
+  ],
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/card/index",
+        "iconPath": "img/tag/0.png",
+        "selectedIconPath": "img/tag/01.png",
+        "text": "名片"
+      },
+      {
+        "pagePath": "pages/merchant/index",
+        "iconPath": "img/tag/4.png",
+        "selectedIconPath": "img/tag/44.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/clock/index",
+        "iconPath": "img/tag/3.png",
+        "selectedIconPath": "img/tag/33.png",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/dynamic/index",
+        "iconPath": "img/tag/2.png",
+        "selectedIconPath": "img/tag/22.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/website/index",
+        "iconPath": "img/tag/1.png",
+        "selectedIconPath": "img/tag/11.png",
+        "text": "官网"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

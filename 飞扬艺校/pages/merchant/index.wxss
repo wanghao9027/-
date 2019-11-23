@@ -1,0 +1,117 @@
+/* @import "/pages/common/icon/icon.wxss";
+@import "/pages/common/consu/consu.wxss"; */
+
+.shop_wrap {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.tabs-item .selected {
+	color: red;
+	border-bottom: 1px solid black;
+}
+
+.shop_one {
+	width: 100%;
+	height: 400rpx;
+	display: flex;
+}
+
+.shop_one image {
+	width: 100%;
+	height: 400rpx;
+}
+
+.shop-two {
+	width: 95%;
+	height: 220rpx;
+	border: 1px solid #ccc;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 80%;
+	left: 2.5%;
+}
+
+.shop_t_o {
+	width: 30%;
+	display: flex;
+}
+
+.shop_t_t {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.shop_t_t text {
+	margin: 30rpx 0 0 0;
+	font-size: 30rpx;
+}
+
+.shop_t_o image {
+	width: 65%;
+	height: 65%;
+	border-radius: 50%;
+	margin-top: 15%;
+	margin-left: 10%;
+}
+
+.shop_qq {
+	width: 100vw;
+	height: 170rpx;
+}
+
+.shop_un {
+	width: 90vw;
+	height: 80rpx;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30rpx;
+}
+
+.shop_en {
+	width: 90vw;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.shop_yn {
+	display: flex;
+	flex-direction: column;
+	width: 44vw;
+	height: 350rpx;
+	background: #eee;
+	margin: 20rpx 0 0 0;
+}
+
+.shop_yn image {
+	width: 100%;
+	height: 200rpx;
+}
+
+.shop_text_o {
+	font-size: 30rpx;
+	color: red;
+	margin: 30rpx 0 0 0;
+}
+
+.in_text {
+	width: 100vw;
+	height: 80rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25rpx;
+	color: rgb(205, 205, 205);
+}

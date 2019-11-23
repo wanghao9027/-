@@ -1,0 +1,58 @@
+/* pages/ranking/index.wxss */
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(141, 122, 254);
+}
+.content{
+    width: 100vw;
+    min-height: 100vh;
+}
+.title-img{
+    width: 100vw;
+    height: 300rpx;
+}
+.con-list{
+    width: 100%;
+    min-height:300rpx;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+.list{
+    width: 100%;
+    min-height: 200rpx;
+    background: #fff;
+    border-radius: 6rpx;
+}
+.item{
+    width:100%;
+    height: 100rpx;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.item image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    margin-left: 10rpx;
+}
+.item>view{
+    margin-left: 10rpx;
+
+}
+.list:nth-child(2){
+    margin-top: 20rpx;
+}
+.index{
+    width: 80rpx;
+    background: greenyellow;
+    color: green;
+    text-align: center;
+    border-radius: 6rpx;
+}
+.item .zan{
+    position: absolute;
+    right: 20rpx;
+}
